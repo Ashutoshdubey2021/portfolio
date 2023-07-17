@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/black-background-with-logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#portfolio">Extra-Curricular</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Engineering Undergraduate</p>
+                <h1>Hi I am <span>Ashutosh</span> <br>from DTU</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- ----------------------about--------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dev.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am an ambitious engineering student from DTU with a passion for Coding and development.
+                        Equipped with strong technical skills, I strive to excel in every project I undertake. Currently
+                        seeking an internship to further enhance my expertise and contribute to real-world solutions.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web app interfaces</li>
+                            <li><span>DSA</span><br>Good knowledge of DS and Algorithms</li>
+                            <li><span>C++</span><br>Overall have good command over the language</li>
+                            <li><span>Data Analytics</span><br>PowerBI along and data scrapping
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web app interfaces</li>
+                            <li><span>web development</span><br>web app development</li>
+                            <li><span>app development</span><br>building os</li>
+                        </ul>
+                    </div> -->
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>DTU Mechanical Engineering</span><br>8.23 CGPA</li>
+                            <li><span>RPVV INA 12th</span><br>92%</li>
+                            <li><span>ATSBV Chattarpur 10th</span><br>94.6%</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------services------------------------------>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2> API Web App</h2>
+                    <p>Created a web application that can detect the weather and temperature of your location through
+                        your latitude and longitude
+
+                    </p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX design</h2>
+                    <p>created a complete portfolio website for a web developer using modern css and javascript, it have
+                        navigation functionality along with hover effects</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>App development</h2>
+                    <p>Created a meme sharing application using Reddit api and kotlin, it have a simple UI design and
+                        user can share memes through a link</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------POR--------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Extra-Curricular</h1>
+            <div class="services-list por-list">
+                <div>
+                    <!-- <i class="fas fa-code"></i> -->
+                    <h2> NSS DTU</h2>
+                    <p>Taught many students from the government school about new upcoming technologies and organised
+                        book donation camp and collected over 800 books
+
+                    </p>
+                    <a href="http://www.dtu.ac.in/Web/Community/nss.php">Learn More</a>
+                </div>
+                <div>
+                    <!-- <i class="fas fa-crop-alt"></i> -->
+                    <h2>AirDrift</h2>
+                    <p>This is my youtube channel, thorugh which we share our stories in the form of well scripted
+                        movies,we gathered over 1000 views under 2 days through our story.</p>
+                    <a href="https://youtube.com/@airdrift">Learn More</a>
+                </div>
+                <div>
+                    <!-- <i class="fas fa-app-store"></i> -->
+                    <h2>RAKT DTU</h2>
+                    <p>Been part of the team that organised the most sucessful Blood-Donation Camp and currently a
+                        member of Rakt dtu web development team</p>
+                    <a href="http://www.dtu.ac.in/Web/Community/nss.php">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------------portfolio----------------------- -->
+
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Extra-Curricular</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/OIP.jpg">
+                    <div class="layer">
+                        <h3>NSS DTU</h3>
+                        <p>Been part of the team that organised the most sucessful Blood-Donation Camp </p>
+                        <a href="#">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/th.jpg">
+                    <div class="layer">
+                        <h3>AirDrift</h3>
+                        <p>This is my youtube channel, thorugh which we share our stories in the form of well scripted
+                            movies,we gathered over 1000 views under 2 days through our story.
+
+                        </p>
+                        <a href="#">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="work">
+                        <img src="images/70273.jpg">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p> odio, iure, alias illo repudiandae voluptate dignissimos dolorum, hic consequuntur
+                                aperiam
+                                impedit quas? Quia, asperiores dolore rerum voluptatum voluptate laborum commodi!</p>
+                            <a href="#">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <a href="#">SEE more</a>
+                    </div> -->
+
+    <!-- <button href="#" class="btn"> See More</button> -->
+
+    <!-- </div>
+    </div> -->
+
+    <!-- --------------------------------contact-------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+
+                    <div class="containerx">
+
+
+                        <p> Email ID: ashujeeadvance@gmail.com</p>
+                        <p>Phone NO.: 7678447050</p>
+                        <div class="social-icons">
+                            <a href="https://youtube.com/@airdrift"><i class="fab fa-youtube"></i></a>
+                            <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.instagram.com/ashutoshdubey_official"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ashutosh-dubey-503a39237"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+
+                        <a href="images/RESUME 01.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="YourName" required>
+                        <input type="email" name="email" placeholder="YourEmail" required>
+                        <textarea name="Message" rows="6" placeholder="YourMessage"></textarea>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="copyright">
+                    <p>Copyright made by alpha human</p>
+                </div> -->
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = doc.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+    </form> -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw4Z65ovzcDaL-uNhyKcA6PNyJokpRZXRDIev72LyymrS3tJuTi7J1LAJXuHm_bbaDj/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
