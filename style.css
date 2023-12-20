@@ -488,27 +488,7 @@ nav .fas{
 
 /*************************************************************  */
 
-/* Add a class to hide/show the video for mobile */
-#mobile-video {
-    display: none;
-}
 
-/* Media query to apply styles only for screens with a maximum width of 768px (adjust as needed) */
-@media screen and (max-width: 768px) {
-    #header {
-        background: none; /* Remove the background image for mobile */
-    }
-
-    #mobile-video {
-        display: block; /* Show the video for mobile */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-}
 /* @media only screen and(max-width:600px){
     #header{
         background-image:url(images/70273.jpg);
