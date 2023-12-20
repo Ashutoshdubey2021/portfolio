@@ -413,11 +413,11 @@ nav .fas{
 
     .header-text {
         margin-top: 20%; /* Adjust margin as needed for smaller screens */
-        font-size: 16px;
+        font-size: 24pxpx;
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
      nav .fas{
         display: block;
