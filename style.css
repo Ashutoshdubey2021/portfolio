@@ -408,7 +408,7 @@ nav .fas{
 /********************************************************  */
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: none; /* Remove the background image on smaller screens */
+        background-image: none !important; /* Remove the background image on smaller screens */
     }
 
     .header-text {
